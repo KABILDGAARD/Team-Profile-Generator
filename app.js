@@ -166,7 +166,7 @@ function buildHtmlPage() {
         if (err) throw err;
     })
 
-    console.log("Page generated");
+    console.log("Page rendered");
 
     for (member of teamList) {
         if (member.getRole() == "Manager") {
@@ -180,7 +180,7 @@ function buildHtmlPage() {
     fs.appendFileSync("./output/teamPage.html", "</div></main></body></html>", function (err) {
         if (err) throw err;
     });
-    console.log("Page tags closed, Operation completed.")
+    console.log("Task completed.")
 
 }
 
